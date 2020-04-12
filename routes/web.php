@@ -23,9 +23,9 @@ Route::get('entries/create', 'EntryController@create')->name('entries.create');
 Route::post('entries', 'EntryController@store')->name('entries.store');
 
 
-Route::get('entries/{entry}', 'GuestController@show')->name('entries.guest.show');
-Route::get('entries/{entry}/edit', 'EntryController@edit')->name('entries.guest.edit');
+Route::get('entries/{entryBySlug}', 'GuestController@show');
 
+Route::get('entries/{entry}/edit', 'EntryController@edit');
 Route::put('/entries/{entry}', 'EntryController@update');
 
 Route::get('users/{user}', 'UserController@show')->name('entries.user.show');
