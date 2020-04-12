@@ -23,10 +23,7 @@ class Entry extends Model
         $this->attributes['slug'] = Str::slug($value);
     }
 
-    // public function getRouteKeyName()
-    // {
-    //     return 'slug';
-    // }
+  
 
     public function getUrl()
     {
